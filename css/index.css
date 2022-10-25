@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
 :root{
-  --main-color: #333;
+  --main-color: #A9D9C2;
   --light-black: #333;
   --white: #f4dae2;
   --black: rgb(0, 0, 0);
@@ -58,8 +59,8 @@ section{
 
 .heading h3{
   font-size: 4rem;
-  color: var(--black);
-  font-family: 'Merienda One', cursive;
+  color: var(--light-black);
+  font-family: 'Fuzzy Bubbles', cursive;
 }
 
 
@@ -89,15 +90,18 @@ section{
 
 .header .flex .logo{
   margin-left: 2rem;
-  font-size: 2.5rem;
-  color:var(--white);
-  font-family: 'Freehand', cursive;
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.header .flex .logo img{
+  width: 50px;
+  height: 50px;
 }
 
 .header .flex .navbar a{
   margin-left: 2rem;
   font-size: 2rem;
-  color:var(--white);
+  color:var(--light-black);
 }
 
 .header .flex .navbar a:hover{
@@ -113,7 +117,7 @@ section{
 
 
 .home-bg{
-  background: linear-gradient(150deg, var(--white), transparent 90%),  url(../images/wallpaper_home.png) no-repeat;
+  background: linear-gradient(150deg, var(--white), transparent 90%),  url(../images/wallpaper.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -131,33 +135,24 @@ section{
 
 .home-bg .home .content h3{
   font-size: 6rem;
-  font-family: 'Merienda One', cursive;
+  font-family: 'Fuzzy Bubbles', cursive;
   color: var(--black);
-}
-
-
-.home-bg .home .content p{
-  padding: 1rem 0;
-  font-size: 1.5rem;
-  color: var(--black);
-  line-height: 2;
-
 }
 
 
 .btn{
   display: inline-block;
   margin-top: 1rem;
-  background-color: var(--black);
+  background-color: var(--main-color);
   cursor: pointer;
-  color: var(--white);
+  color: var(--light-black);
   font-size: 1.8rem;
   padding: 1rem 3rem;
 }
 
 .btn:hover{
   background-color: var(--main-color);
-  color: var(--light-black);
+  color: var(--black);
 }
 
 
@@ -183,7 +178,7 @@ section{
 .about .content h3{
   font-size: 4.5rem;
   color: var(--black);
-  font-family: 'Merienda One', cursive;
+  font-family: 'Fuzzy Bubbles', cursive;
 }
 
 .about .content p{
@@ -192,34 +187,6 @@ section{
   color: var(--light-color);
   font-size: 1.7rem;
 }
-
-
-.facility .box-container{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
-  gap:1.5rem;
-  align-items: flex-start;
-}
-
-.facility .box-container .box{
-  text-align: center;
-}
-
-.facility .box-container .box img{
-  height: 60px;
-  margin-bottom: .5rem;
-}
-
-.facility .box-container .box h3{
-  font-size: 2rem;
-}
-
-.facility .box-container .box p{
-  line-height: 2;
-  font-size: 1.5rem;
-  color: var(--light-color);
-}
-
 
 .menu .box-container{
   display:grid;
@@ -269,15 +236,16 @@ section{
 }
 
 .footer .box-container .box i {
-  font: 3rem;
+  font: 10rem;
   line-height: 6rem;
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
   background-color: var(--main-color);
-  color:var(--white);
+  color: rgb(0, 0, 0);
   margin-bottom: .5rem;
 }
+
 .footer .box-container .box h3{
 
   margin: 1rem 0;
